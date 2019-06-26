@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+
+<head>
+
+    <title> Latest transport system </title>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Simple,responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
+
+    <meta name="keywords" content="rails, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{% static "css/responsive.css" %}"/>
+
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static "css/animate.css" %}"/>
+
+<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+
+    <!-- BX slider CSS -->
+    <link rel="stylesheet" href="{% static "css/jquery.bxslider.css" %}"/>
+
+    <!-- responsive css -->
+      <link rel="stylesheet" href="{% static "css/responsive.css" %}"/>
+
+</head>
+
+
+<div>
+
+
+    <header class="header" id="HOME">
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+
+            <div class="container">
+
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#latest-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="latest-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#HOME" class="nav-item">HOME</a></li>
+                        <li><a href="#FEATURES" class="nav-item">ACTION PLANS</a></li>
+                        <li><a href="#REQUIREMENTS" class="nav-item">REQUIREMENTS</a></li>
+
+                        <li><a href="#ISSUES" class="nav-item">ISSUES</a></li>
+                        <li><a href="#OUTCOMES" class="nav-item">OUTCOMES</a></li>
+
+
+
+
+                        <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="header-overlay">
+
+
+            <div class="container header-container">
+
+                <div class="row">
+
+                    <div class="col-md-8">
+
+                        <div class="header-text">
+
+
+                            <h1> REVOLUTION IN TRANSPORT SYSTEM </h1>
+                            <p> A new approach
+                              <br>
+                            <a href="{% url 'first_app:description' %}">Description !</a><br>
+                            <a href="{% url 'first_app:case_study' %}">Feasibility Analysis ! </a><br>
+                            THERE WILL BE FURTHER IMPROVEMENTS IN THIS WEBSITE.
+                            We have written the code for schedulling of pods which will be added to this web-page by which people can check for availability of pods.
+                            We will also make live pods location showing on this website by using gps api.
+                            We have also given multilevel parking presentation which will help in parking of cars and other vehicles at stations of our system.
+                         </p>
+                          </div>
+
+                        <div class="header-btns">
+
+                            <a class="btn btn-tour wow fadeInRight" href="#"> Take A Tour
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1">
+
+                        <div class="header-iphone">
+
+                          <img src="{% static "images/fast.jpg" %}" alt="reference">
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <section class="features" id="FEATURES">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="section-title wow fadeIn" data-wow-duration="1s">
+
+                        <h2> PROJECT-OUTLINE </h2>
+
+                        <p> Outlook </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="features-inner-wrapper">
+
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="col-md-4 wow fadeInLeft" data-wow-duration="1s">
+
+
+
+                        <div class="left-feature-item">
+
+
+                            <p> (FIGURES USED IN EXPLANATION CAN VARY, THEY ARE TAKEN JUST FOR EASY UNDERSTANDING,
+                                FIGURES ARE DERIVED THROUGH NEWTON'S LAWS OF MOTION)
+                               The middle section of the main road is divided into two lanes with proper barrigation.One lane is for the forward
+                             and the other app is for the backward movement.On these lanes there are pods(autonomous or self-driven) running continuously with 60kmph.There are elevated
+                             tracks for the loading and unloading of the passengers on the definite station of which the passenger has taken tickets. The pods
+                            stop only at the desired station of the two passengers sitting on the pods, hence reducing the waiting time.For instance, the maximum
+                            speed of delhi metro is 90kmph but the average time reduces to 27kmph due to various stoppages.This system charges just charges 1 rupee per
+                           kilometre to each passenger, in case a passenger wants to board the pod singularly, he/she can pay 2 rupees.This pod is cheaper than all the current
+                           means of transports while providing all the high quality facilities like air bags, air-conditioning, first aid box, gps tracking etc (mentioned in detail
+                           in the ppt). The pods are centrally monitored and controlled. In case of a faulty pod, all the pods running on the
+                            same track are made to stop and a helper pod present at each station toes it to the next station for damage repair.
+
+
+
+
+   >
+
+                           </details>)
+                           </p>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="feature-iphone">
+<img class="wow bounceIn img-responsive" data-wow-duration="1s" src="{% static "images/1 crossing.jpg" %}" alt="crossing">
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-4 wow fadeInRight" data-wow-duration="1s">
+
+                        <div class="right-feature-item">
+
+
+
+
+                            <p> A SENSOR is placed at a distance of 282.84 metres from the end where the compartment joins the main track.
+                                If the SENSOR is found to be without pressure at (no of blocks joined to travel together +2 for space and safety)
+                                continuous unit of time required by the block to travel distance equal to its length; a signal is sent and the first set of
+                                ( joined) compartments is prepared to join the track at the
+                                opening.
+                                When any person reaches the destination point, the compartment detaches from the main track and moves to
+                                an auxiliary track in the same way as during joining and takes the compartment to the booth with
+                                decreasing acceleration and ultimately stoping it at desired booth.
+                                The complete setup reduces cases of theft of goods and
+                                bullying or physical harrassments caused in public transports due to its locking feature. These VEHICLES BEING
+                                SELF DRIVEN CAN LOOK FOR THE TRACK CONDITION THEMSELVES THROUGH COMPUTER VISION and IR sensors.
+                                      <strong> IN case of families </strong>
+                                    A special carriage cabin is made which can be joined to the main pod in case their are children travelling
+                                  with families. Also, pods equipped with all the ambulance facilities are made for the emergency cases, as all the pods are
+                                centrally controlled, the <strong> ambulance pods </strong> can be made to reach the hospital very quickly.  </p>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="testimonial">
+
+        <div class="testimonial-overlay">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 wow bounceInDown">
+
+
+                        <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+
+
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+                                <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                            </ol>
+
+
+
+                            <div class="carousel-inner">
+                                <section id="REQUIREMENTS">
+
+                                </section>
+                                <div class="item active text-center">
+
+                                    <h1 style="color: darkorange">FACILITIES REQUIRED </h1>
+
+                                    <img class="center-block" src="{% static "images/park.jpg" %}" alt="center-block">
+
+                                    <div class="testimonial-caption">
+
+                                        <h2>PARKING PLOTS</h2>
+                                        <p>“Nearby to the area where the tracks system starts beginning , a parking plot needs to be constructed (NATURE OF PARKING
+                                            EXPLAINED IN THE ADJOINED SLIDES)to
+                                            park the vehicles of the passengers and provide them with the compartments at the same place.”</p>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="item text-center">
+
+  <img src="{% static "images/box.jpg" %}" class="center-block" alt=boxes>
+                                    <div class="testimonial-caption">
+
+                                        <h2> SMALL  VEHICLES ( called compartments here) EQUIPPED WITH GPS AND SECURITY PASSWORD LOCK ON GATES </h2>
+                                        <p> For correct placement of vehicles, we need to know the suitable space between the two upcoming(runnning) vehicles, for a
+                                            particular vehicle to be placed in between them.</p>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="item text-center">
+
+
+  <img src="{% static "images/overbridge.jpg" %}" class="center-block" alt="overbridge">
+                                    <div class="testimonial-caption">
+
+                                        <h2>WELL LAID TRACKS WITH SENSORS AND SMALL OVERBRIDGES AT CROSS-STREETS</h2>
+                                        <p>“IN case of cross-roads an over-bridge can be made to avoid clash.”</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+    </section>
+
+
+    <section id="ISSUES">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-10 col-md-offset-1">
+
+
+                    <div class="section-title">
+
+                        <h2><strong> ISSUE </strong></h2>
+                        <p>EVERINCREASING population and automobiles AND exponentially increasing TRAFFIC
+                            and ENVIRONMENT-THREATS.</p>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="choose-us-wraper">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="data wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+
+  <img class="img-responsive" src="{% static "images/dark.jpg" %}" alt="danger">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                        <section id="OUTCOMES">
+
+                            <div class="title">
+
+
+                                <h2><strong>OUR IDEA AND ITS BENEFITS</strong></h2>
+                                <p> To build Fast and efficient transport system which uses small SELF DRIVEN oval
+                                    shaped compartments to carry people safely with high speed on tracks laid on roads which will help reducing pollution
+                                    and ensure faster travelling.
+                                </p>
+
+                            </div>
+                        </section>
+
+
+                        <div class="data-des">
+
+
+                            <div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1s">
+
+
+                                <div><i class="fa fa-bolt"></i></div>
+
+
+                                <h3>SAVE FUEL</h3>
+                                <p> Reduced waiting hours ensures sustainable usage of fuels. THE STRUCTURE  will also
+                                    remove the illegal accession of land by road-side vendors.The space optimisation allows more peple
+                                    to travel through a given space( the method reduces the cases of one person taking an entire four seater car for travel)</p>
+
+                            </div>
+
+
+
+                            <div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1s">
+
+
+                                <div><i class="fa fa-bullhorn"></i></div>
+
+                                <h3>REDUCE NOISE  AND AIR POLLUTION</h3>
+                                <p>Honking in hilly areas causes landslides and disturbs wildlife and in plains causes several temperamental problems
+                                    .Whereas soot from vehicles causes air pollution and lung diseases. ( These compartments dont honk and are electrically driven)</p>
+
+                            </div>
+
+
+
+                            <div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1s">
+
+
+
+                                <div><i class="fa fa-flag-o"></i></div>
+
+
+                                <h3>SECURED TRANSFER AND TRACKING OF GOODS AND GPS SYSTEM</h3>
+                                <p> Since these gps equipped and numbered compartments stop directly to their programmed stopping point, transfer of goods becomes
+                                    more reliable, as it reduces the cases of theft and misplacement, the receiver can directly receive goods from the compartment on insertion
+                                    of correct password set by the sender. </p>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="purchase-now">
+
+        <div class="container">
+
+            <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+
+                <div class="col-md-9">
+
+                    <p>IS YOUR AREA CROWDED TOO????? .TO DEMAND FOR A TRACK NEAR YOUR AREA CLICK HERE.</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <a class="btn btn-primary btn-pruchase-now" href="#">YES!</a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="counter">
+
+        <div class="counter-overlay">
+
+            <div class="container wow bounceInLeft" data-wow-duration="1s">
+
+                <div class="row text-center">
+
+
+
+                    <div class="col-md-3">
+
+                        <div class="counter-item">
+
+                            <div><i class="fa fa-line-chart"></i></div>
+                            <h2><span class="counter-num"> 480652 </span><span>+</span></h2>
+                            <p>Annual Accident Troll</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <div class="counter-item">
+
+                            <div><i class="fa fa-road"></i></div>
+                            <h2><span class="counter-num"> 2190 </span><span>+</span></h2>
+                            <p>Average Waiting Hours Annual Per Person.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <div class="counter-item">
+
+                            <div><i class="fa fa-dollar"></i></div>
+                            <h2><span class="counter-num"> 60000 </span><span>+</span></h2>
+                            <p>Money Lost In Fuels Due to Traffic Congestion in Crores Annually. </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="counter-item">
+
+                            <div><i class="fa fa-car"></i></div>
+                            <h2><span class="counter-num">3400 </span><span>+</span></h2>
+                            <p>Number of Vehicles on Road in Crores</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="IMAGES" id="DOWNLOAD">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="section-title">
+
+
+                        <h2> BLUEPRINT </h2>
+                        <p>THE IDEA IS BEST SUITED FOR TOURIST OR COMMERCIAL AREAS IN HILLY REGIONS. WE HAVE USED MULTI STOREY PARKING( self thought) using minimal installation cost
+                            KEEPING IN MIND THE AVAILABLE SPACE, elaborated EXPLAINATION IS GIVEN IN POWERPOINT PRESENTATION FORMAT.</p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-duration="1s">
+  <img class="img-responsive" src="{% static "images/blue.jpeg" %}" alt="blue-prints">
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <section class="available-on ">
+
+        <div class="container wow bounceInRight" data-wow-duration="1s">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="available-title">
+                        <h2>Regions To Be Considered First. </h2>
+
+                        <p></p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="row">
+
+                        <a href="#">
+
+                            <div class="col-md-4 no-padding">
+                                <div class="available-on-item">
+
+                                    <i class="fa fa-truck"></i>
+                                    <div class="available-on-inner">
+
+                                        <h2> OCCASIONS LIKE GANPATI-VISARJAN AND KUMBH-MELA</h2>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </a>
+
+
+
+                        <a href="#">
+
+                            <div class="col-md-4 no-padding">
+                                <div class="available-on-item">
+
+                                    <i class="fa fa-tree"></i>
+                                    <div class="available-on-inner">
+
+                                        <h2> HILLY TERRAINS </h2>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </a>
+
+                        <a href="#">
+
+                            <div class="col-md-4 no-padding">
+                                <div class="available-on-item">
+
+                                    <i class="fa fa-map-signs"></i>
+                                    <div class="available-on-inner">
+
+                                        <h2> METROPOLITIAN CITIES</h2>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </a>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="CONTACT">
+
+        <div class="container wow bounceIn">
+
+            <div class="row">
+
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="section-title">
+
+                        <h2>Contact Us</h2>
+                        <p>Happy to Help You !! Send Us Your Valuable Suggestions And Comments On This Project.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="contact-us-form wow bounceIn">
+
+
+            <div class="container">
+
+                <form role="form">
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+
+                        </div>
+
+                        <div class="col-md-8">
+
+                            <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message Text...."></textarea>
+
+                            <button type="button" class="btn btn-default submit-btn form_submit">SEND</button>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 wow bounceInLeft">
+
+                    <div class="social-icons">
+
+                        <ul>
+
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+
+            <div class="col-md-6">
+
+                <div class="scroll-top">
+                    <a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="{% static 'app.js' %}"></script>
+
+           <!-- Bootstrap JavaScript -->
+           <script src="{% static 'js/jquery.js' %}"></script>
+
+           <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+           <!-- Bx Slider JS -->
+            <script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+
+           <!-- Add JS counter lib -->
+            <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+
+
+
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+           <!-- Add wow js lib -->
+           <script src="{% static 'js/wow.min.js' %}"></script>
+
+           <!-- Custom Js -->
+           <script src="{% static 'js/custom.js' %}"></script>
+
+    </body>
+
+
+</html>
